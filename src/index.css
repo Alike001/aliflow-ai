@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bg:       #5151a5;
+  --surface:  #232333; 
+  --surface2: #0d0d18;
+
+  --border:   rgba(255, 255, 255, 0.07);
+
+  --text:     #eeeef5; 
+  --muted:    #7878a0;
+
+  --accent:   #7c6af5;   
+  --accent2:  #a78bfa;   
+
+  --success:  #22d3a0;  
+  --warning:  #f59e0b;  
+  --danger:   #f87171;   
+
+  --radius:   14px;
+
+  --font-d:   'Roboto',    sans-serif;  
+  --font-b:   'Roboto', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-b);
+  font-size: 15px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-b);
+  border: none;
+  background: none;
+}
+
+input {
+  font-family: var(--font-b);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity:   0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity:   1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.fu {
+  animation: fadeUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.fu1 { animation-delay: 0.06s; }
+.fu2 { animation-delay: 0.12s; }
+.fu3 { animation-delay: 0.18s; }
+.fu4 { animation-delay: 0.24s; }
