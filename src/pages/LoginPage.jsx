@@ -43,7 +43,7 @@ export default function LoginPage() {
 
   return (
     <div className="login-page">
-      <div className="login-page_inner">
+      <div className="login-page_inner fu">
 
         <div className="login-page_hero">
           <div className="login-page_logo-icon">💡</div>
