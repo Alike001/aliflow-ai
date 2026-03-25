@@ -1,0 +1,127 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(92, 92, 187, 0.88);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar_inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar_logo-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  font-size: 16px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.navbar_logo-text {
+  font-family: var(--font-d);
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+
+.navbar_links {
+  display: flex;
+  gap: 4px;
+}
+
+.navbar_link {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+  transition: color 0.2s, background 0.2s;
+}
+
+.navbar_link:hover {
+  color: var(--text);
+  background: var(--surface2);
+}
+
+.navbar_actions {
+  margin-left:  auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar_avatar-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px 5px 6px;
+  background: var(--surface2);
+  border-radius: 40px;
+  border: 1px solid var(--border);
+}
+
+.navbar_avatar-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.navbar_avatar-name {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.navbar_signout-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.navbar_signout-btn:hover {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+.navbar_signin-btn {
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  transition: opacity 0.2s;
+}
+
+.navbar_signin-btn:hover {
+  opacity: 0.88;
+}
