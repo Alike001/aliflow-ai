@@ -142,13 +142,13 @@ export const COURSES = [
 
 export const MOCK_USERS = [
   {
-    email: "hoyeleye00@gmail.com",
+    email: "hoye@learn.io",
     password: "hoye1234",
     name: "Ali Hammed",
     avatar: "AH",
   },
   {
-    email: "aish@gmail.com",
+    email: "aish@learn.io",
     password: "aish123",
     name: "Aishat",
     avatar: "AH",

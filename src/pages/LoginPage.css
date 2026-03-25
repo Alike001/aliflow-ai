@@ -1,0 +1,135 @@
+.login-page {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: radial-gradient(
+    ellipse at 65% 15%,
+    rgba(124, 106, 245, 0.13) 0%,
+    transparent 55%
+  );
+}
+
+.login-page_inner {
+  width: 100%;
+  max-width: 420px;
+}
+
+.login-page_hero {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.login-page_logo-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  font-size: 26px;
+  margin: 0 auto 16px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page_heading {
+  font-family: var(--font-d);
+  font-weight: 800;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.login-page_subheading {
+  color: var(--muted);
+}
+
+.login-page_card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.login-page_hint {
+  background: rgba(124, 106, 245, 0.1);
+  border: 1px solid rgba(124, 106, 245, 0.25);
+  border-radius: 10px;
+  padding: 11px 15px;
+  margin-bottom: 22px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.login-page_hint strong {
+  color: var(--accent2);
+}
+
+.login-page_field {
+  margin-bottom: 14px;
+}
+
+.login-page__label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.login-page_input {
+  width: 100%;
+  padding: 11px 14px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.login-page_input:focus {
+  border-color: var(--accent);
+}
+
+.login-page_error {
+  padding: 9px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 14px;
+  background:rgba(248, 113, 113, 0.1);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+  color: var(--danger);
+}
+
+.login-page_submit-btn {
+  width: 100%;
+  padding: 13px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color:#fff;
+  font-weight: 700;
+  font-size: 15px;
+  transition: opacity 0.2s;
+}
+
+.login-page_submit-btn:hover {
+  opacity: 0.88;
+}
+
+.login-page_submit-btn:disabled {
+  opacity: 0.65;
+  cursor:  not-allowed;
+}
+
+.login-page_alt-hint {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.login-page_alt-hint strong {
+  color: var(--text);
+}
