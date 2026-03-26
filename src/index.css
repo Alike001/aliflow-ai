@@ -1,27 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Natural, human-friendly color palette */
-  --bg:       #fafbfc;        /* Soft off-white background */
-  --surface:  #ffffff;       /* Clean white surfaces */
-  --surface2: #f8f9fa;       /* Light gray for secondary surfaces */
+  --bg: #fafbfc;    
+  --surface: #ffffff;      
+  --surface2: #f8f9fa;      
 
-  --border:   #e1e5e9;        /* Subtle gray borders */
+  --border: #e1e5e9;        
 
-  --text:     #1a202c;        /* Dark charcoal for main text */
-  --muted:    #718096;       /* Medium gray for secondary text */
+  --text: #1a202c;     
+  --muted: #718096;     
 
-  --accent:   #3182ce;       /* Friendly blue accent */
-  --accent2:  #4299e1;       /* Lighter blue for hover states */
+  --accent: #3182ce;       
+  --accent2: #4299e1;       
 
-  --success:  #38a169;       /* Natural green for success */
-  --warning:  #d69e2e;       /* Warm amber for warnings */
-  --danger:   #e53e3e;       /* Accessible red for errors */
+  --success: #38a169;       
+  --warning: #d69e2e;     
+  --danger: #e53e3e;      
 
-  --radius:   8px;           /* Slightly smaller, more natural radius */
+  --radius: 8px;           
 
-  --font-d:   'Inter', sans-serif;  /* Modern, readable font */
-  --font-b:   'Inter', sans-serif;
+  --font-d: 'Inter', sans-serif; 
+  --font-b: 'Inter', sans-serif;
 }
 
 *{
@@ -74,12 +73,3 @@ input {
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
-
-.fu {
-  animation: fadeUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-.fu1 { animation-delay: 0.06s; }
-.fu2 { animation-delay: 0.12s; }
-.fu3 { animation-delay: 0.18s; }
-.fu4 { animation-delay: 0.24s; }
