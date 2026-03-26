@@ -6,7 +6,7 @@
   padding: 20px;
   background-image: radial-gradient(
     ellipse at 65% 15%,
-    rgba(124, 106, 245, 0.13) 0%,
+    rgba(49, 130, 206, 0.08) 0%,
     transparent 55%
   );
 }
@@ -52,8 +52,8 @@
 }
 
 .login-page_hint {
-  background: rgba(124, 106, 245, 0.1);
-  border: 1px solid rgba(124, 106, 245, 0.25);
+  background: rgba(49, 130, 206, 0.1);
+  border: 1px solid rgba(49, 130, 206, 0.25);
   border-radius: 10px;
   padding: 11px 15px;
   margin-bottom: 22px;
@@ -70,7 +70,7 @@
   margin-bottom: 14px;
 }
 
-.login-page__label {
+.login-page_label {
   display: block;
   font-size: 13px;
   font-weight: 600;

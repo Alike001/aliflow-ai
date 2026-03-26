@@ -1,26 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --bg:       #5151a5;
-  --surface:  #232333; 
-  --surface2: #0d0d18;
+  /* Natural, human-friendly color palette */
+  --bg:       #fafbfc;        /* Soft off-white background */
+  --surface:  #ffffff;       /* Clean white surfaces */
+  --surface2: #f8f9fa;       /* Light gray for secondary surfaces */
 
-  --border:   rgba(255, 255, 255, 0.07);
+  --border:   #e1e5e9;        /* Subtle gray borders */
 
-  --text:     #eeeef5; 
-  --muted:    #7878a0;
+  --text:     #1a202c;        /* Dark charcoal for main text */
+  --muted:    #718096;       /* Medium gray for secondary text */
 
-  --accent:   #7c6af5;   
-  --accent2:  #a78bfa;   
+  --accent:   #3182ce;       /* Friendly blue accent */
+  --accent2:  #4299e1;       /* Lighter blue for hover states */
 
-  --success:  #22d3a0;  
-  --warning:  #f59e0b;  
-  --danger:   #f87171;   
+  --success:  #38a169;       /* Natural green for success */
+  --warning:  #d69e2e;       /* Warm amber for warnings */
+  --danger:   #e53e3e;       /* Accessible red for errors */
 
-  --radius:   14px;
+  --radius:   8px;           /* Slightly smaller, more natural radius */
 
-  --font-d:   'Roboto',    sans-serif;  
-  --font-b:   'Roboto', sans-serif;
+  --font-d:   'Inter', sans-serif;  /* Modern, readable font */
+  --font-b:   'Inter', sans-serif;
 }
 
 *{

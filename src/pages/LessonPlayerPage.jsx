@@ -58,7 +58,7 @@ export function LessonPlayerPage() {
   }
 
   return (
-    <div className="lesson-player fu">
+    <div className="lesson-player">
       <div className="lesson-player_card">
 
         <div className="lesson-player_header">
@@ -87,16 +87,30 @@ export function LessonPlayerPage() {
         </div>
 
         <div className="lesson-player_video-wrapper">
+         {lesson.type === "embed" ? (
+          <iframe
+            key={lesson.videoUrl}
+            src={lesson.videoUrl}
+            className="lesson-player__iframe"
+            title={lesson.title}
+            allow="accelerometer; autoplay; clipboard-write;
+                  encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+
+        ) : (
           <video
             ref={videoRef}
             key={lesson.videoUrl}
             controls
-            className="lesson-player_video"
+            className="lesson-player__video"
             onEnded={handleVideoEnded}
           >
             <source src={lesson.videoUrl} type="video/mp4" />
             Your browser does not support HTML5 video.
           </video>
+
+        )}
         </div>
 
         <div className="lesson-player_nav">

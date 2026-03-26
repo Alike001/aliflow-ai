@@ -1,6 +1,6 @@
 import "./ProgressBar.css";
 
-export default function ProgressBar({
+export function ProgressBar({
   percent,
   color = "var(--accent)",
   height = 6,               

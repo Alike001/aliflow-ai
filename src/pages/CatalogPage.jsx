@@ -33,14 +33,14 @@ export default function CatalogPage() {
   return (
     <div className="catalog-page">
 
-      <div className="catalog-page_header fu">
+      <div className="catalog-page_header">
         <h1 className="catalog-page_title">Course Catalog</h1>
         <p className="catalog-page_subtitle">
           {COURSES.length} courses to level up your engineering career
         </p>
       </div>
 
-      <div className="catalog-page_filters fu fu1">
+      <div className="catalog-page_filters">
 
         <input
           className="catalog-page_search"
@@ -76,18 +76,13 @@ export default function CatalogPage() {
       ) : (
 
         <div className="catalog-page__grid">
-          {filteredCourses.map((course, index) => (
-            
-            <div
+          {filteredCourses.map((course) => (
+            <CourseCard
               key={course.id}
-              className={`fu fu${Math.min(index + 1, 4)}`}
-            >
-              <CourseCard
-                course={course}
-                enrolled={isEnrolled(course.id)}
-                progress={getProgress(course.id, course.lessons.length)}
-              />
-            </div>
+              course={course}
+              enrolled={isEnrolled(course.id)}
+              progress={getProgress(course.id, course.lessons.length)}
+            />
           ))}
         </div>
 

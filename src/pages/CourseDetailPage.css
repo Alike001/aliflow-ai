@@ -108,7 +108,7 @@
   color: var(--muted);
 }
 
-.course-detail-page__lesson-circle--done {
+.course-detail-page_lesson-circle--done {
   background: var(--success);
   border-color: var(--success);
   color: #000;
@@ -134,7 +134,7 @@
   color: var(--muted);
 }
 
-.course-detail-page__right {
+.course-detail-page_right {
   position: sticky;
   top: 80px; 
 }
@@ -208,4 +208,61 @@
 
 .course-detail-page_not-found-link {
   color: var(--accent);
+}
+
+@media (max-width: 960px) {
+  .course-detail-page {
+    padding: 24px 12px;
+  }
+
+  .course-detail-page_layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .course-detail-page_right {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .course-detail-page_enroll-card {
+    width: 100%;
+  }
+
+  .course-detail-page_lesson-row {
+    padding: 11px 14px;
+  }
+
+  .course-detail-page_lesson-title {
+    font-size: 13px;
+  }
+
+  .course-detail-page_lesson-duration {
+    font-size: 11px;
+  }
+
+  .course-detail-page_probably-video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  .course-detail-page_title {
+    font-size: 26px;
+  }
+
+  .course-detail-page_meta {
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .course-detail-page_enroll-body {
+    padding: 16px;
+  }
+
+  .course-detail-page_enroll-btn {
+    padding: 11px;
+    font-size: 14px;
+  }
 }

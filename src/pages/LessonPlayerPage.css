@@ -22,7 +22,7 @@
   flex: 1; 
 }
 
-.lesson-player__lesson-count {
+.lesson-player_lesson-count {
   font-size: 12px;
   color: var(--muted);
   margin-bottom: 1px;
@@ -57,8 +57,16 @@
   color: var(--muted);
 }
 
-.lesson-player__video-wrapper {
+.lesson-player_video-wrapper {
   background: #000;
+}
+
+.lesson-player__iframe {
+  width:        100%;
+  aspect-ratio: 16 / 9;
+  display:      block;
+  border:       none;
+  background:   #000;
 }
 
 .lesson-player_video {
@@ -75,7 +83,7 @@
   align-items: center;
 }
 
-.lesson-player_nav-btn {
+.lesson-player__nav-btn {
   padding: 9px 18px;
   border-radius: 8px;
   font-size: 14px;
@@ -89,7 +97,7 @@
   color: var(--text);
 }
 
-.lesson-player_nav-btn--next-active {
+.lesson-player__nav-btn--next-active {
   background: linear-gradient(135deg, var(--accent), var(--accent2));
   color: #fff;
   border: none;
@@ -102,7 +110,14 @@
   opacity: 0.5;
 }
 
-.lesson-player_counter {
+.lesson-player__nav-btn--disabled {
+  background: var(--surface2);
+  color: var(--muted);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.lesson-player__counter {
   font-size: 13px;
   color:var(--muted);
 }
@@ -120,4 +135,69 @@
   border-radius: 16px;
   text-align: center;
   color: var(--muted);
+}
+
+@media (max-width: 860px) {
+  .lesson-player {
+    margin-top: 20px;
+    padding: 0 12px;
+  }
+
+  .lesson-player_card {
+    border-radius: 14px;
+  }
+
+  .lesson-player_header,
+  .lesson-player_nav {
+    padding: 12px 12px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .lesson-player_header-info {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .lesson-player_complete-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .lesson-player_video {
+    max-height: 280px;
+  }
+
+  .lesson-player__nav-btn,
+  .lesson-player_nav-btn--disabled {
+    flex: 1;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .lesson-player__counter {
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+  }
+
+  .lesson-player_not-enrolled {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .lesson-player_lesson-title {
+    font-size: 16px;
+  }
+
+  .lesson-player_complete-btn {
+    font-size: 13px;
+  }
+
+  .lesson-player__nav-btn,
+  .lesson-player_nav-btn--disabled {
+    padding: 9px 10px;
+  }
 }

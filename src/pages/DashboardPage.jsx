@@ -50,7 +50,7 @@ export default function DashboardPage() {
   return (
     <div className="dashboard-page">
 
-      <div className="dashboard-page_header fu">
+      <div className="dashboard-page_header">
         <h1 className="dashboard-page_title">
           Welcome back, {user.name.split(" ")[0]}
         </h1>
@@ -59,7 +59,7 @@ export default function DashboardPage() {
         </p>
       </div>
 
-      <div className="dashboard-page_stats fu fu1">
+      <div className="dashboard-page_stats">
         {stats.map(({ icon, value, label, color }) => (
           <div key={label} className="dashboard-page_stat-card">
             <div className="dashboard-page_stat-icon">{icon}</div>
@@ -74,7 +74,7 @@ export default function DashboardPage() {
         ))}
       </div>
 
-      <div className="dashboard-page_courses-section fu fu2">
+      <div className="dashboard-page_courses-section">
         <h2 className="dashboard-page_section-title">
           Your Courses
         </h2>

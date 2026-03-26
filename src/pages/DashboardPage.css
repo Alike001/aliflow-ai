@@ -27,7 +27,7 @@
   margin-bottom: 40px;
 }
 
-.dashboard-page__stat-card {
+.dashboard-page_stat-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -138,4 +138,47 @@
 .dashboard-page_course-chevron {
   color: var(--muted);
   font-size: 18px;
+}
+
+@media (max-width: 800px) {
+  .dashboard-page {
+    padding: 24px 14px;
+  }
+
+  .dashboard-page_title {
+    font-size: 26px;
+  }
+
+  .dashboard-page_stats {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-page_section-title {
+    font-size: 18px;
+  }
+
+  .dashboard-page_empty {
+    padding: 40px 18px;
+  }
+
+  .dashboard-page_course-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 16px;
+  }
+
+  .dashboard-page_course-emoji {
+    width: 42px;
+    height: 42px;
+  }
+
+  .dashboard-page_course-pct {
+    margin-top: 8px;
+  }
+
+  .dashboard-page_browse-btn {
+    width: 100%;
+    justify-content: center;
+    display: inline-flex;
+  }
 }

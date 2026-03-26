@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { ProgressBar } from "./ProgressBar";
 import "./CourseCard.css";
 
-export default function CourseCard({ course, enrolled, progress }) {
+export function CourseCard({ course, enrolled, progress }) {
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
 

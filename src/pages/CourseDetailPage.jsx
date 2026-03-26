@@ -47,7 +47,7 @@ export function CourseDetailPage() {
 
         <div className="course-detail-page_left">
 
-          <div className="course-detail-page_header fu">
+          <div className="course-detail-page_header">
             <div
               className="course-detail-page_pill"
               style={{
@@ -75,7 +75,7 @@ export function CourseDetailPage() {
             </div>
           </div>
 
-          <div className="fu fu1">
+          <div>
             <h2 className="course-detail-page_curriculum-title">
               Curriculum · {course.lessons.length} lessons
             </h2>
@@ -140,7 +140,7 @@ export function CourseDetailPage() {
           </div>
         </div>
 
-        <div className="course-detail-page_right fu fu2">
+        <div className="course-detail-page_right">
           <div className="course-detail-page_enroll-card">
 
             <div
