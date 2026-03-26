@@ -1,0 +1,123 @@
+.lesson-player {
+  margin-top: 40px;
+}
+
+.lesson-player_card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.lesson-player_header {
+  padding: 14px 22px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.lesson-player_header-info {
+  flex: 1; 
+}
+
+.lesson-player__lesson-count {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 1px;
+}
+
+.lesson-player_lesson-title {
+  font-family: var(--font-d);
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.lesson-player_complete-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.lesson-player_complete-btn--done {
+  background: rgba(34, 211, 160, 0.14);
+  border: 1px solid rgba(34, 211, 160, 0.35);
+  color: var(--success);
+}
+
+.lesson-player_complete-btn--undone {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.lesson-player__video-wrapper {
+  background: #000;
+}
+
+.lesson-player_video {
+  width: 100%;
+  max-height: 520px;
+  display: block;
+}
+
+.lesson-player_nav {
+  padding: 14px 22px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lesson-player_nav-btn {
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  transition: opacity 0.2s;
+}
+
+.lesson-player_nav-btn--prev {
+  background: var(--surface2);
+  color: var(--text);
+}
+
+.lesson-player_nav-btn--next-active {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #fff;
+  border: none;
+}
+
+.lesson-player_nav-btn--disabled {
+  background: var(--surface2);
+  color: var(--muted);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.lesson-player_counter {
+  font-size: 13px;
+  color:var(--muted);
+}
+
+.lesson-player_not-found {
+  padding: 40px 0;
+  color: var(--muted);
+}
+
+.lesson-player_not-enrolled {
+  margin-top: 32px;
+  padding: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  text-align: center;
+  color: var(--muted);
+}
